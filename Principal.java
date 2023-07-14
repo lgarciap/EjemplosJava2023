@@ -34,7 +34,7 @@ public class Principal{
         otroPerro.setGenero("macho");
         otroPerro.setRaza("pug");
         otroPerro.setTamanio("pequeño");
-        //Imprimimos a bruno
+        //Imprimimos a bruno 
         System.out.println(otroPerro);
 
     }
