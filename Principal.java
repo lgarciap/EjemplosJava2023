@@ -22,11 +22,11 @@ public class Principal{
         miPerro.setGenero("hembra");
         miPerro.setTamanio("mediano");
         miPerro.setRaza("labrador");
-
+        //imprimimos Laika
         System.out.println("\nMi perra:");
         System.out.println("----------------------");
         System.out.println(miPerro);
-        
+        // Bruno
         Perro otroPerro = new Perro();
         otroPerro.setNombre("Bruno");
         otroPerro.setColor("champan");
@@ -34,6 +34,7 @@ public class Principal{
         otroPerro.setGenero("macho");
         otroPerro.setRaza("pug");
         otroPerro.setTamanio("pequeño");
+        //Imprimimos a bruno
         System.out.println(otroPerro);
 
     }
