@@ -1,3 +1,4 @@
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 public class CES_Poli {
@@ -86,6 +87,10 @@ public class CES_Poli {
         }
         return suma; 
 
+    }
+
+    public void guardarEnArchivo() throws Exception{
+        trabajadorCSV.escribirArchivo(trabajadores);
     }
 
 }

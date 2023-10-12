@@ -1,7 +1,9 @@
 import java.util.Scanner;
 public class Principal{
     public static void main(String[] args){
+
         CES_Poli ispjae = new CES_Poli();
+        
         Scanner teclado = new Scanner(System.in);
 
         System.out.println("Bienvenido al Instituto Superior Politécnico José Antonio Echeverría");
@@ -12,6 +14,13 @@ public class Principal{
         System.out.println(ispjae.calcularPlanilla());
         System.out.println(ispjae.calcularPlanillaDoc());
         System.out.println(ispjae.calcularPlanillaNoDoc());
+
+        try {
+            ispjae.guardarEnArchivo();
+        } catch (Exception e) {
+            // TODO: handle exception
+            System.out.println("Hubo un problema al crear el archivo");
+        }
 
 
     }
