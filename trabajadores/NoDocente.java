@@ -7,7 +7,7 @@ public class NoDocente extends Trabajador{
     }
 
     public NoDocente(int feriados,String nombre, String nit, double salarioBase, int horasAusencia, String telefono, long dpi, String dir) {
-        super(nombre, nit, feriados, feriados, telefono, feriados, dir);
+        super(nombre, nit, salarioBase, horasAusencia, telefono, dpi, dir);
         this.feriados = feriados;
     }
 
