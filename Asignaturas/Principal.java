@@ -3,7 +3,7 @@ public class Principal{
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
         //Semestre primerCiclo = new Semestre();
-        SemestreDinamico primerCiclo = new SemestreDinamico();
+        Semestre primerCiclo = new Semestre();
         String nombreAsig = "";
         double notaAsig = 0;
         String opciones = "1.Agregar Asignaturas\n2.Mostrar Asignaturas\n3.Calcular Promedio General\n4.Clase que mejor va\n5.Mejores cursos\n6.Peores Cursos\n7.Salir";

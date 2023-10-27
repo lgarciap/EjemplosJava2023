@@ -1,7 +1,7 @@
 /**
  * 
  */
-public class Materia{
+public class Materia implements Comparable{
     private String nombre;
     private double nota;
 
@@ -38,6 +38,17 @@ public class Materia{
     @Override
     public String toString() {
         return " nombre: " + getNombre() +", nota:" + getNota();
+    }
+
+
+    @Override
+    public int compareTo(Object otra) {
+        // TODO Auto-generated method stub
+        if (this.nota>((Materia)otra).getNota())
+            return 1;
+        if (this.nota<((Materia)otra).getNota())
+            return -1;
+        return 0;
     }
     
 }

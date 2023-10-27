@@ -40,8 +40,9 @@ public class Semestre{
     public String mejorClase(){
         Materia mejor = asignaturas[0];
         for (int i = 1; i< asignaturas.length; i++){
+            
             if (mejor != null && asignaturas[i]!=null){
-                if (asignaturas[i].getNota()>mejor.getNota())
+                if (asignaturas[i].compareTo(mejor)>0)
                     mejor = asignaturas[i];
             }
         }
